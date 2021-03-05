@@ -1,0 +1,46 @@
+labsuser@ubuntu1804:~/GitDemo1$ git add .
+
+labsuser@ubuntu1804:~/GitDemo1$ 
+labsuser@ubuntu1804:~/GitDemo1$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   abc
+
+labsuser@ubuntu1804:~/GitDemo1$ git restore --staged abc
+git: 'restore' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+labsuser@ubuntu1804:~/GitDemo1$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   abc
+
+labsuser@ubuntu1804:~/GitDemo1$ git reset abc
+labsuser@ubuntu1804:~/GitDemo1$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	abc
+
+nothing added to commit but untracked files present (use "git add" to track)
+labsuser@ubuntu1804:~/GitDemo1$ git remote add origin https://github.com/Bapurandare/TCSMEANstack.git
+labsuser@ubuntu1804:~/GitDemo1$ git push -u origin HEAD
+Username for 'https://github.com': bhawana.cpp@gmail.com
+Password for 'https://bhawana.cpp@gmail.com@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 484 bytes | 121.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/Bapurandare/TCSMEANstack.git
+ * [new branch]      HEAD -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+labsuser@ubuntu1804:~/GitDemo1$ git remote add origin https://github.com/Bapurandare/TCSMEANstack.git
+fatal: remote origin already exists.
+labsuser@ubuntu1804:~/GitDemo1$ 
